@@ -98,7 +98,7 @@ DATABASES = {
         "NAME": secret.DB_NAME,
         "USER": secret.DB_USER,
         "PASSWORD": secret.DB_PASS,
-        "HOST": "10.12.0.206",
+        "HOST": "localhost",
         "PORT": "5432",       
     }
 }
