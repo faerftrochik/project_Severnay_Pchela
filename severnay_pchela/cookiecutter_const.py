@@ -1,0 +1,8 @@
+# PREP {
+STUDENT_FULL_NAME_RUS = "Якшин Константин Владимирович"
+PROJECT_NAME_RUS = "Северная пчела"
+PROJECT_DESCRIPTION =  "Сеть отелей"
+MAIN_BACKGROUND_COLOR = "#FFFFFF"
+AUX_BACKGROUND_COLOR = "#f1fe39"
+ATTENTION_COLOR = "#3964fe"
+# } PREP
