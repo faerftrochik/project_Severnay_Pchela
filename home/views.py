@@ -1,5 +1,7 @@
 from django.views.generic import ListView  # PREP
 
+from quest.models import Quest
+
 
 class HomeView(ListView):  # PREP
     """
@@ -11,4 +13,4 @@ class HomeView(ListView):  # PREP
     """
 
     template_name = "home/home.html"  # PREP
-    # model = ...
+    model = Quest
