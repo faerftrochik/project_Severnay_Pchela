@@ -1,7 +1,7 @@
-from django.views.generic import TemplateView  # PREP
+from django.views.generic import ListView  # PREP
 
 
-class HomeView(TemplateView):  # PREP
+class HomeView(ListView):  # PREP
     """
     PREP
     Редактировать данный файл по необходимости.
@@ -11,3 +11,4 @@ class HomeView(TemplateView):  # PREP
     """
 
     template_name = "home/home.html"  # PREP
+    # model = ...
