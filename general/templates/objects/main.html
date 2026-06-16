@@ -35,12 +35,7 @@ https://getbootstrap.com/docs/5.3/utilities/spacing/#gap
     </div>
     <div class="p-2 me-3 mt-3 position-relative text-left">
         <p>Статус: {{ object.StatusId }}</p>
-
-        {% if user.is_superuser %}
-            {% comment %}<a class="btn del-button position-absolute z-3" href="{{ object.get_delete_url }}">{% bs_icon 'trash' %}</a>{% endcomment %}
-        {% endif %}
+            <a class="btn del-button position-absolute z-3" href="{{ object.get_delete_url }}">{% bs_icon 'trash' %}</a>
     </div>
-    {% if user.is_superuser %}
-        <a href="{# PREP {{ object.get_update_url }} #}" class="stretched-link"></a>
-    {% endif %}
-</div>
+        <a href="{{ object.get_update_url }}" class="stretched-link"></a>
+    </div>

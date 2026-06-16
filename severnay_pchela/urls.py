@@ -23,6 +23,8 @@ from django.urls import path, include
 from django.conf import settings  # PREP
 from django.conf.urls.static import static  # PREP
 
+from guest.models import Guest
+from guest.views import GuestCreateView, GuestUpdateView
 from home.views import HomeView
 
 urlpatterns = [
@@ -31,6 +33,10 @@ urlpatterns = [
     path("", HomeView.as_view(), name="home"),
     
     path("admin/", admin.site.urls),
+
+    path("guest/create", GuestCreateView.as_view(), name="guest_create"),
+
+    path("guest/<int:pk>/update", GuestUpdateView.as_view(), name="guest_update"),
 ]
 
 urlpatterns += i18n_patterns(
