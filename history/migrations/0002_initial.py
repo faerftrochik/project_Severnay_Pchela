@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('history', '0001_initial'),
-        ('quest', '0001_initial'),
+        ('guest', '0001_initial'),
         ('roomtype', '0001_initial'),
     ]
 
@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='history',
             name='idquest',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='quest.quest', verbose_name='Номер квеста'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='guest.guest', verbose_name='Номер квеста'),
         ),
         migrations.AddField(
             model_name='history',

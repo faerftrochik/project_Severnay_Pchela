@@ -1,14 +1,14 @@
 from django.db import models
 
 class History(models.Model):
-    idquest = models.ForeignKey('quest.Quest', on_delete=models.CASCADE, verbose_name="Номер квеста")
-    idroom = models.ForeignKey('room.Room', on_delete=models.CASCADE, verbose_name="Номер комнаты")
-    checkin = models.DateField(verbose_name="Заселился")
-    checkOut = models.DateField(verbose_name="Выселился")
-    comment = models.CharField(max_length=500, verbose_name="Комментарий")
+    GuestId = models.ForeignKey('guest.Guest', on_delete=models.CASCADE, verbose_name="Номер квеста")
+    RoomId = models.ForeignKey('room.Room', on_delete=models.CASCADE, verbose_name="Номер комнаты")
+    CheckIn = models.DateField(verbose_name="Заселился")
+    CheckOut = models.DateField(verbose_name="Выселился")
+    Comment = models.CharField(max_length=500, verbose_name="Комментарий")
 
     def __str__(self):
-        return str(self.comment)
+        return str(self.Comment)
 
     class Meta:
-        ordering = ['comment']
+        ordering = ['Comment']

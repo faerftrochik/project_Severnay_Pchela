@@ -1,12 +1,12 @@
 from django.db import models
 
 class Room(models.Model):
-    nomber = models.PositiveBigIntegerField(verbose_name="Номер")
-    idroomtype = models.ForeignKey('roomtype.Roomtype', on_delete=models.CASCADE, verbose_name="Номер типа комнаты")
-    idhotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, verbose_name="Номер отеля")
+    Number = models.PositiveBigIntegerField(verbose_name="Номер")
+    RoomTypeId = models.ForeignKey('roomtype.RoomType', on_delete=models.CASCADE, verbose_name="Номер типа комнаты")
+    HotelId = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, verbose_name="Номер отеля")
 
     def __str__(self):
-        return str(self.nomber)
+        return str(self.Number)
 
     class Meta:
-        ordering = ['nomber']
+        ordering = ['Number']

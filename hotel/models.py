@@ -1,7 +1,7 @@
 from django.db import models
 
 class Hotel(models.Model):
-    hotel_name = models.CharField(max_length=100, verbose_name="Имя отеля")
+    HotelName = models.CharField(max_length=100, verbose_name="Имя отеля")
 
     def __str__(self):
-        return self.hotel_name
+        return self.HotelName

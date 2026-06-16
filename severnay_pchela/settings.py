@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     "hotel",
     "roomtype",
     "status",
-    "quest",
+    "guest",
     "history",
     "room",
     # } STUD!

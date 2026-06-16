@@ -1,6 +1,6 @@
 from django.views.generic import ListView  # PREP
 
-from quest.models import Quest
+from guest.models import Guest
 
 
 class HomeView(ListView):  # PREP
@@ -13,4 +13,4 @@ class HomeView(ListView):  # PREP
     """
 
     template_name = "home/home.html"  # PREP
-    model = Quest
+    model = Guest
