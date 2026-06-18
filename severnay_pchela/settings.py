@@ -49,11 +49,11 @@ INSTALLED_APPS = [
 
     # STUD! {
     "gender",
-    "hotel",
+    "history",
     "roomtype",
     "status",
     "guest",
-    "history",
+    "hotel",
     "room",
     # } STUD!
 

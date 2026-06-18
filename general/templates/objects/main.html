@@ -35,7 +35,10 @@ https://getbootstrap.com/docs/5.3/utilities/spacing/#gap
     </div>
     <div class="p-2 me-3 mt-3 position-relative text-left">
         <p>Статус: {{ object.StatusId }}</p>
+        <div class="p-2 me-3 mt-3 position-relative">
             <a class="btn del-button position-absolute z-3" href="{{ object.get_delete_url }}">{% bs_icon 'trash' %}</a>
+        </div>
+            <a class="btn del-button position-absolute z-3" href="{{ object.get_history_url }}">История посещений</a>
     </div>
         <a href="{{ object.get_update_url }}" class="stretched-link"></a>
     </div>

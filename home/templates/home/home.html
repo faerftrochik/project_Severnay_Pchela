@@ -12,6 +12,8 @@
 
 {% block content %}
 
+<a class="btn attention" href="{% url 'guest_create' %}">Добавить партнера</a>
+
 {% for object in object_list %}
     {% include 'objects/main.html' %}
 {% endfor %}

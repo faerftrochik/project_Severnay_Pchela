@@ -13,5 +13,8 @@ class Guest(models.Model):
     def __str__(self):
         return self.FullName
 
+    def get_history_url(self):
+        return reverse("guest_history", kwargs={"pk": self.pk})
+
     class Meta:
         ordering = ['Birthday']
