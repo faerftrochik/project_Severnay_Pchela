@@ -9,5 +9,5 @@ class HistoryGuestView(ListView):
     model = History
 
     def get_queryset(self):
-        qs = super().get_queryset().filter(guest_pk=self.kwargs["pk"])
+        qs = super().get_queryset().filter(GuestId=self.kwargs["pk"])
         return qs
