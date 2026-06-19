@@ -4,7 +4,6 @@ from django.views.generic import ListView
 
 from history.models import History
 
-
 class HistoryGuestView(ListView):
     model = History
 

@@ -30,8 +30,8 @@ https://getbootstrap.com/docs/5.3/utilities/spacing/#gap
     <div class="p-2 ms-3 mt-3">
         <p>ФИО: {{ object.FullName }}</p>
         <p>Пол: {{ object.GenderId }}</p>
-        <p>Дата рождения: {{ object.Birthday }}</p>
-        <p>Сколько раз останавливался:</p>
+        <p>Дата рождения: {{ object.Birthday | date:"Y-d-m" }}</p>
+        <p>Сколько раз останавливался: {{ object.history_set.all | length }}</p>
     </div>
     <div class="p-2 me-3 mt-3 position-relative text-left">
         <p>Статус: {{ object.StatusId }}</p>
