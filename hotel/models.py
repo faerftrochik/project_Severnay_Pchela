@@ -5,3 +5,6 @@ class Hotel(models.Model):
 
     def __str__(self):
         return self.HotelName
+
+    class Meta:
+        ordering = ['HotelName']

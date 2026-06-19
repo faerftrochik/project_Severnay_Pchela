@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block title %}
-        История гостя : {{ object_list.first.guest }}
+        История гостя: {{ object_list.first.GuestId.FullName }}
 {% endblock %}
 
 {% block h %}
-        История гостя : {{ object_list.first.guest }}
+        История гостя: {{ object_list.first.GuestId.FullName }}
 {% endblock %}
 
 {% block content %}

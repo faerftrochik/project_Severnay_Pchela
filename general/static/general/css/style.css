@@ -126,4 +126,24 @@ body.body-background-customized {
 /* } PREP */
 
 /* STUD! { */
+
+.btn.del-button-history {
+    border: 2px solid #3964fe !important;
+    color: black !important;
+    background: transparent !important;
+    transition: all 0.15s ease !important;
+}
+
+.btn.del-button-history:hover {
+    background-color: #3964fe !important;
+    color: black !important;
+    border-color: #3964fe !important;
+    transform: translateY(-1px);
+}
+
+.btn.del-button-history:active {
+    transform: translateY(0);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
 /* } STUD! */
